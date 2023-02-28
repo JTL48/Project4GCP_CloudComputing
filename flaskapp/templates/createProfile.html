@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Create Profile {% endblock %}</h1>
+    <form method="post">
+        <label for="firstName">First Name</label>
+        <br>
+        <input type="text" name="firstName" value="{{ request.form['firstName'] }}"></input>
+        <br>
+
+        <label for="lastName">Last Name</label>
+        <br>
+        <input type="text" name="lastName" value="{{ request.form['lastName'] }}"></input>
+        <br>
+
+        <label for="email">Email</label>
+        <br>
+        <input type="text" name="email" value="{{ request.form['email'] }}"></input>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

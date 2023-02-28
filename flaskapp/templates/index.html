@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="display:none;">{% block title %} Home {% endblock %}</h1>
+        <div>
+           <a href="{{ url_for('viewdb') }}"><button>View Database</button></a>
+           <a href="{{ url_for('createLogin') }}"><button>Create New Profile</button></a>
+           <a href="{{ url_for('findUser') }}"><button>Find User Info</button></a>
+           <a href="{{ url_for('extraCredit') }}"><button>View Extra Credit</button></a>
+        </div>
+{% endblock %}
